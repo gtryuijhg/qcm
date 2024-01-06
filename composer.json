@@ -1,0 +1,11 @@
+{
+	"autoload" : {
+		"psr-4" : {
+			"Aftral\\Qcm\\" : "src"
+		}
+	},
+	"name" : "aftral/qcm",
+	"require" : {
+		"php" : ">=7.4"
+	}
+}

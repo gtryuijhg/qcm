@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+	<route url="/users/user/signin" module="AppUser" action="signin"/>
+	<route url="/users/user/disconnect" module="AppUser" action="disconnect"/>
+	<route url="/users/user/home" module="AppUser" action="home"/>
+	<route url="/users/user/update" module="AppUser" action="update"/>
+	<route url="/users/user/delete" module="AppUser" action="delete"/>
+	<route url="/users/qcm/([a-z]+)" module="Qcm" action="solve" vars="questionType"/>
+</routes>

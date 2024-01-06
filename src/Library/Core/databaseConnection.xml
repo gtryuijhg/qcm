@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connections>
+	<!-- configurer les attributs de connexion restants à la base de données -->
+	<connection sgbdr="mysql" host="localhost" dbname="qcmtestphp" charset="utf8" login="root" password=""/>
+</connections>

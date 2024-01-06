@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+	<route url="/admins/admin/signin" module="AppAdmin" action="signin"/>
+	<route url="/admins/admin/register" module="AppAdmin" action="register"/>
+	<route url="/admins/admin/home" module="AppAdmin" action="home"/>
+	<route url="/admins/admin/disconnect" module="AppAdmin" action="disconnect"/>
+	<route url="/admins/admin/update" module="AppAdmin" action="update"/>
+	<route url="/admins/admin/delete" module="AppAdmin" action="delete"/>
+	<route url="/admins/user/register" module="AppUser" action="register"/>
+	<route url="/admins/user/list" module="AppUser" action="list"/>
+	<route url="/admins/user/update/([0-9]+)" module="AppUser" action="update" vars="id"/>
+	<route url="/admins/user/delete/([0-9]+)" module="AppUser" action="delete" vars="id"/>
+	<route url="/admins/answer/create/([0-9]+)" module="Answer" action="create" vars="id"/>
+	<route url="/admins/answer/list" module="Answer" action="list"/>
+	<route url="/admins/answer/update/([0-9]+)" module="Answer" action="update" vars="id"/>
+	<route url="/admins/answer/delete/([0-9]+)" module="Answer" action="delete" vars="id"/>
+	<route url="/admins/question/create" module="Question" action="create"/>
+	<route url="/admins/question/list" module="Question" action="list"/>
+	<route url="/admins/question/update/([0-9]+)" module="Question" action="update" vars="id"/>
+	<route url="/admins/question/delete/([0-9]+)" module="Question" action="delete" vars="id"/>
+</routes>

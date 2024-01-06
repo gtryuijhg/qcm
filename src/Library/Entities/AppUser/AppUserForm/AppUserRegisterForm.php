@@ -1,0 +1,139 @@
+<?php
+namespace Aftral\Qcm\Library\Entities\AppUser\AppUserForm;
+
+use Aftral\Qcm\Library\Core\Entity;
+
+/**
+ * 
+ * @author gregoire.huteau
+ *
+ */
+class AppUserRegisterForm extends Entity
+{
+    private $_appUserFirstName;
+    private $_appUserLastName;
+    private $_appUserLogin;
+    private $_appUserPassword;
+    private $_confirmAppUserPassword;
+    
+    /**
+     * 
+     * @return string/NULL
+     */
+    public function appUserFirstName()
+    {
+        if (!empty($this->_appUserFirstName))
+        {
+            return $this->_appUserFirstName;
+        }
+    }
+    
+    /**
+     * 
+     * @return string/NULL
+     */
+    public function appUserLastName()
+    {
+        if (!empty($this->_appUserLastName))
+        {
+            return $this->_appUserLastName;
+        }
+    }
+    
+    /**
+     * 
+     * @return string/NULL
+     */
+    public function appUserLogin()
+    {
+        if (!empty($this->_appUserLogin))
+        {
+            return $this->_appUserLogin;
+        }
+    }
+    
+    /**
+     * 
+     * @return string/NULL
+     */
+    public function appUserPassword()
+    {
+        if (!empty($this->_appUserPassword))
+        {
+            return $this->_appUserPassword;
+        }
+    }
+    
+    /**
+     * 
+     * @return string/NULL
+     */
+    public function confirmAppUserPassword()
+    {
+        if (!empty($this->_confirmAppUserPassword))
+        {
+            return $this->_confirmAppUserPassword;
+        }
+    }
+    
+    /**
+     * 
+     * @param string/NULL $appUserFirstName
+     */
+    public function setAppUserFirstName($appUserFirstName):void
+    {
+        if (is_string($appUserFirstName))
+        {
+            $this->_appUserFirstName = $appUserFirstName;
+        }
+    }
+    
+    /**
+     * 
+     * @param string/NULL $appUserLastName
+     */
+    public function setAppUserLastName($appUserLastName):void
+    {
+        if (is_string($appUserLastName))
+        {
+            $this->_appUserLastName = $appUserLastName;
+        }
+    }
+    
+    /**
+     * 
+     * @param string/NULL $appUserLogin
+     */
+    public function setAppUserLogin($appUserLogin):void
+    {
+        if (is_string($appUserLogin))
+        {
+            $this->_appUserLogin = $appUserLogin;
+        }
+    }
+    
+    /**
+     * 
+     * @param string/NULL $appUserPassword
+     */
+    public function setAppUserPassword($appUserPassword):void
+    {
+        if (is_string($appUserPassword))
+        {
+            $this->_appUserPassword = $appUserPassword;
+        }
+    }
+    
+    /**
+     * 
+     * @param string/NULL $confirmAppUserPassword
+     */
+    public function setConfirmAppUserPassword($confirmAppUserPassword):void
+    {
+        if (is_string($confirmAppUserPassword))
+        {
+            $this->_confirmAppUserPassword = $confirmAppUserPassword;
+        }
+    }
+}
+
